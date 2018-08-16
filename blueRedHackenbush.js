@@ -25,6 +25,7 @@ function gameButtonPress() {
         b.html('   ');
         let i = 0;
         while(i < lines.length) {
+            if(!(connectedToGround(i, lines))){
                 lines.splice(i,1);
             }
             else {
